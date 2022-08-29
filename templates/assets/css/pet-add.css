@@ -1,9 +1,8 @@
 main {
     display: flex;
-    
     margin-top: 40px;
     margin-bottom: 40px;
-    background-color: aqua;
+    background-color: var(--secundaria);
 }
 
 main>*{
@@ -12,10 +11,10 @@ main>*{
 
 #display-foto {
     position: relative;
-    width: 100%;
-    height: 100%;
     object-fit: cover;
     cursor: pointer;
+    width: 100%;
+    display: block;
 }
 
 main label[for=foto] {
@@ -35,21 +34,30 @@ main label[for=foto] div{
 }
 
 .form-item{
-    margin-bottom: 10px;
+    width: calc(50% - 10px);
 }
 
 .form-item select,
 .form-item input[type=text] {
-    width: 200px;
+    width: 100%;
 }
 .form-item input[type=date] {
-    width: 200px;
+    width: 100%;
 }
 
 .cadastre form{
     background-color: var(--secundaria);
     padding: 40px;
     color: #FFF;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px
 }
 
+.input-radio-container div {
+    margin-bottom: 8px;
+}
 
+.cadastre form h1 {
+    width: 100%;
+}
