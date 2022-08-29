@@ -1,0 +1,63 @@
+main {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: var(--secundaria);
+}
+
+main>*{
+    width: 50%;
+}
+
+#display-foto {
+    position: relative;
+    object-fit: cover;
+    cursor: pointer;
+    width: 100%;
+    display: block;
+}
+
+main label[for=foto] {
+    position: relative;
+}
+
+main label[for=foto] div{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    cursor: pointer;
+}
+
+#foto {
+    display: none;
+}
+
+.form-item{
+    width: calc(50% - 10px);
+}
+
+.form-item select,
+.form-item input[type=text] {
+    width: 100%;
+}
+.form-item input[type=date] {
+    width: 100%;
+}
+
+.vacine form{
+    background-color: var(--secundaria);
+    padding: 40px;
+    color: #FFF;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px
+}
+
+.input-radio-container div {
+    margin-bottom: 8px;
+}
+
+.vacine form h1 {
+    width: 100%;
+}
