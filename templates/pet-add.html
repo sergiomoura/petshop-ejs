@@ -57,25 +57,13 @@
 
         <section class="cadastre">
 
-            <h1>Novo Pet</h1>
-
+            
             <form>
+                <h1>Novo Pet</h1>
 
                 <div class="form-item input-text-container">
                     <label for="nome">Nome:</label>
                     <input type="text" name="nome" id="nome">
-                </div>
-
-                <div class="form-item input-radio-container">
-                    <div>Sexo:</div>
-                    <label for="sexo-m">
-                        <input type="radio" value="m" name="sexo" id="sexo-m">
-                        <span>Macho</span>
-                    </label>
-                    <label for="sexo-f">
-                        <input type="radio" value="f" name="sexo" id="sexo-f">
-                        <span>Fêmea</span>
-                    </label>
                 </div>
 
                 <div class="form-item input-select-container">
@@ -90,6 +78,22 @@
                 <div class="form-item input-date-container">
                     <label for="nascimento">Data de Nascimento:</label>
                     <input type="date" name="nascimento" id="nascimento">
+                </div>
+
+                <div class="form-item input-radio-container">
+                    <div>Sexo:</div>
+                    <label for="sexo-m">
+                        <input type="radio" value="m" name="sexo" id="sexo-m">
+                        <i class="fa-regular fa-circle"></i>
+                        <i class="fa-regular fa-circle-dot"></i>
+                        <span>Macho</span>
+                    </label>
+                    <label for="sexo-f">
+                        <input type="radio" value="f" name="sexo" id="sexo-f">
+                        <i class="fa-regular fa-circle-dot"></i>
+                        <i class="fa-regular fa-circle"></i>
+                        <span>Fêmea</span>
+                    </label>
                 </div>
 
                 <input type="file" name="foto" id="foto" accept="image/gif, image/jpeg, image/png">

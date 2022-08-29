@@ -25,15 +25,58 @@
     background-color: var(--primaria);
 }
 
-
+select,
 input[type=search],
 input[type=text],
 input[type=email],
+input[type=date],
 input[type=tel]{
     border: none;
     background-color: #FFF;
     padding: 5px;
-    font-size: 14px;
+    font-size: 16px;
+    border: 2px solid var(--primaria);
+    font-family: 'Nunito';
+}
+select:focus,
+input[type=search]:focus,
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=date]:focus,
+input[type=tel]:focus{
+    outline: none;
+    background-color: var(--primaria-alpha);
+}
+input[type=radio]{
+    display:none ;
+}
+
+input[type=radio]~i{
+    color: var(--primaria)
+}
+
+input[type=radio]:checked~i.fa-circle-dot{
+    display: inline-block;
+}
+
+.input-text-container label,
+.input-select-container label,
+.input-date-container label,
+.input-radio-container div{
+    display: block;
+    font-size: 12px;
+}
+
+input[type=radio]:checked~i.fa-circle{
+    display: none;
+}
+
+input[type=radio]:not(:checked)~i.fa-circle-dot{
+    display: none;
+}
+
+input[type=radio]:not(:checked)~i.fa-circle{
+    display: inline-block;
 }
 
 html{
@@ -74,6 +117,7 @@ header nav form input[type=search]{
 header nav form input[type=search]:focus{
     outline: 2px solid rgba(0, 0, 0, 0.5);
     opacity: 1;
+    border-bottom: none;
 }
 
 header nav form button {
