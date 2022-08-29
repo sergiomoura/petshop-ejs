@@ -1,0 +1,56 @@
+main .controles {
+    padding: 40px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+main .display{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 960px;
+    gap: 10px;
+}
+
+a.pet {
+    display: block;
+    text-decoration: none;
+    position: relative;
+}
+
+a.pet img {
+    width: 232px;
+    height: 232px;
+    display: block;
+    object-fit: cover;
+}
+
+a.pet span{
+    display: block;
+    position: absolute;
+    background-color: var(--primaria-alpha);
+    padding: 10px;
+    color: white;
+    font-size: 1.4rem;
+    top: 10px;
+    left: 0;
+}
+
+a.pet div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.649);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    opacity: 0;   
+    font-size: 2rem;
+    transition: opacity linear 0.3s;
+}
+
+a.pet:hover div{
+    opacity: 1;
+}

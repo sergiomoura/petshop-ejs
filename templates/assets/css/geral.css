@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
+:root{
+    --primaria: #FFC107;
+    --primaria-alpha: #ffc1079f;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.botao {
+    padding: 12px 20px;
+    font-size: 1.3rem;
+    text-decoration: none;
+    background-color: #CCC;
+    border-radius: 10px;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.botao.primario{
+    background-color: var(--primaria);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito';
+}
+
+header {
+    background-color: var(--primaria);
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+header nav {
+    display: flex;
+}
+
+header nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    display: inline-block;
+    height: 100%;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-style: normal;
+    padding: 10px 20px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+header nav ul li a:hover{
+    background-color: rgba(255,255,255,0.25);
+}
+
+header nav ul li a.selecionado{
+    border-bottom: 5px solid rgba(255,255,255,0.5);
+    cursor: default;
+}
+
+header nav ul li a.selecionado:hover{
+    background-color: transparent;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.container {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+footer .contato {
+    background-color: var(--primaria);
+    font-size: 18px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+footer .contato ul li{
+    margin-bottom: 10px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap:5px
+}
+
+footer .contato ul li i,
+footer .contato ul li i{
+    color: rgba(0, 0, 0, 0.75)
+}
+
+footer .contato ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
+footer .copyright {
+    color: #FFF;
+    padding: 10px;
+    background-color: #333;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+footer iframe {
+    max-width: 100%;
+    width: 466px;
+    height: 257px;
+}
+
+
+.banner {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+h1 {
+    width: 560px;
+    font-size: 40px;
+    color: #757575;
+}
+
+.cinza {
+    background-color: #E5E5E5;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    margin-top: 70px;
+}
+
+.cinza .servicos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cinza p {
+    font-size: 25px;
+    text-align: left;
+}
+
+.banner h3 {
+    font-size: 27px;
+    width: 561px;
+}
+
+.banner p {
+    font-size: 18px;
+    width: 561px;
+    color: #757575;
+}
+
+.container h1 {
+    font-size: 40px;
+    color: var(--primaria);
+    text-align: center;
+}
+
+.banhos h2 {
+    font-size: 40px;
+    color: #000000;
+}
+
+.banhos h3 {
+    font-size: 30px;
+}
+
+.banhos p {
+    font-size: 18px;
+    color: #757575;
+    width: 537px;
+}
+
+.banhos {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.banhos button {
+    background-color: var(--primaria);
+    color: #FFFFFF;
+    font-size: 16px;
+    width: 245px;
+    border: none;
+    margin-bottom: 30px;
+}
+
+
+/* CONTATO */
+
+.formulario,
+.informacoes {
+    width: 500px;
+    max-width: 100%;
+}
+
+form input:not([type="checkbox"]) {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+form {
+    color: #9B9B9B;
+}
+
+form textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    resize: none;
+    height: 150px;
+}
+
+form button {
+    color: #fff;
+    background-color: var(--primaria);
+    font-size: 18px;
+    font-weight: 600;
+    padding: 5px 20px;
+    border: none;
+    margin-top: 10px;
+    width: 510px;
+}
+
+.contato .container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    min-height: 80vh;
+    flex-wrap: wrap;
+}
+
+.informacoes iframe {
+    width: 100%;
+    height: 350px;
+    margin: 30px auto;
+}
+
+.informacoes {
+    padding-top: 80px;
+}
+
+.formulario h1 {
+    text-align: left;
+}
+
+.formLogin form {
+    width: 245px;
+}
+
+.formLogin h1 {
+    text-align: left;
+    margin-left: 60px;
+    color: var(--primaria);
+}
+
+.formLogin button {
+    width: 258px;
+}
+
+.formLogin p {
+    text-align: left;
+    margin-left: 40px;
+}
+
+.login {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 250px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+
+.formLogin {
+    margin-left: 100px;
+}
+
+
+
+/* CADASTRE-SE */
+
+
+
+.container .cadastre {
+    width: 245px;
+    align-items: center;
+
+}
+
+.cadastre button {
+    width: 260px;
+    margin-bottom: 100px;
+}
+
+.cadastre h1 {
+    text-align: left;
+}
+
+.container .imagem {
+    margin-top: 100px;
+}
+
+.cadastre h1 {
+    width: 290px;
+}
