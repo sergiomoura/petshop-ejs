@@ -13,7 +13,7 @@
     font-size: 1.3rem;
     text-decoration: none;
     background-color: #CCC;
-    border-radius: 10px;
+    border-radius: 6px;
     color: #FFF;
     cursor: pointer;
 }
@@ -21,7 +21,15 @@
 .botao.primario{
     background-color: var(--primaria);
 }
-
+input[type=search],
+input[type=text],
+input[type=email],
+input[type=tel]{
+    border: none;
+    background-color: #FFF;
+    padding: 5px;
+    font-size: 14px;
+}
 body {
     margin: 0;
     padding: 0;
@@ -31,6 +39,37 @@ body {
 header {
     background-color: var(--primaria);
     box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+header nav form{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+header nav form input[type=search]{
+    border: none;
+    border-radius: 3px;
+    background-color: #FFF;
+    padding: 12px;
+    font-size: 1.4rem;
+    border-radius: 0;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0.25;
+}
+
+header nav form input[type=search]:focus{
+    outline: 2px solid rgba(0, 0, 0, 0.5);
+    opacity: 1;
+}
+
+header nav form button {
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    background-color: transparent;
 }
 
 header nav {
@@ -53,7 +92,7 @@ header nav ul li a {
     color: #FFFFFF;
     font-size: 20px;
     font-style: normal;
-    padding: 10px 20px;
+    padding: 10px 10px;
     display: flex;
     height: 100%;
     align-items: center;
@@ -219,15 +258,6 @@ h1 {
     max-width: 100%;
 }
 
-form input:not([type="checkbox"]) {
-    width: 100%;
-    padding: 5px;
-    margin-bottom: 15px;
-}
-
-form {
-    color: #9B9B9B;
-}
 
 form textarea {
     width: 100%;
@@ -235,17 +265,6 @@ form textarea {
     margin-bottom: 10px;
     resize: none;
     height: 150px;
-}
-
-form button {
-    color: #fff;
-    background-color: var(--primaria);
-    font-size: 18px;
-    font-weight: 600;
-    padding: 5px 20px;
-    border: none;
-    margin-top: 10px;
-    width: 510px;
 }
 
 .contato .container {
