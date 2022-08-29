@@ -18,11 +18,14 @@
     color: #FFF;
     cursor: pointer;
     display: inline-block;
+    border: none;
 }
 
 .botao.primario{
     background-color: var(--primaria);
 }
+
+
 input[type=search],
 input[type=text],
 input[type=email],
