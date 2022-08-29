@@ -2,6 +2,7 @@
 :root{
     --primaria: #FFC107;
     --primaria-alpha: #ffc1079f;
+    --secundaria: #444444;
 }
 
 * {
@@ -115,6 +116,22 @@ header .container {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
+}
+
+.subheader{
+    background-color: var(--secundaria);
+    color: #999;
+    padding: 12px 0; 
+}
+
+.subheader .controles a{
+    color: #999;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.subheader .controles a:hover{
+    color: #FFF;
 }
 
 .container {
