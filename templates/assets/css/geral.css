@@ -17,6 +17,7 @@
     border-radius: 6px;
     color: #FFF;
     cursor: pointer;
+    display: inline-block;
 }
 
 .botao.primario{
@@ -31,10 +32,18 @@ input[type=tel]{
     padding: 5px;
     font-size: 14px;
 }
+
+html{
+    height: 100%;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
     font-family: 'Nunito';
+    height: 100%;
 }
 
 header {
@@ -141,7 +150,7 @@ header .container {
 }
 
 footer {
-    margin-top: 20px;
+    margin-top: auto;
 }
 
 footer .contato {
@@ -188,7 +197,7 @@ footer iframe {
     height: 257px;
 }
 
-
+/* 
 .banner {
     margin-top: 100px;
     display: flex;
@@ -267,7 +276,7 @@ h1 {
 }
 
 
-/* CONTATO */
+/* CONTATO *
 
 .formulario,
 .informacoes {
@@ -340,7 +349,7 @@ form textarea {
 
 
 
-/* CADASTRE-SE */
+/* CADASTRE-SE *
 
 
 
@@ -365,4 +374,4 @@ form textarea {
 
 .cadastre h1 {
     width: 290px;
-}
+} */

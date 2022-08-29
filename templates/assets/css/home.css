@@ -1,3 +1,7 @@
+main{
+    margin-bottom: 20px;
+}
+
 main .controles {
     padding: 40px 0;
     display: flex;
